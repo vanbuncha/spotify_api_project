@@ -1,6 +1,5 @@
 var redirect_uri = "https://vanguyen.info/spotify_api_project/";
-// https://eso.vse.cz/~vanv08/SP2/
-// http://127.0.0.1:5500/SP2/index.html
+
 
 // Setting client_id and client_secret + savinig to localstorage
 var client_id = "055761bcf5624053b43975b0a48c0f7b";
