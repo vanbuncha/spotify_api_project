@@ -4,7 +4,7 @@ var redirect_uri = "https://vanguyen.info/spotify_api_project/";
 
 // Setting client_id and client_secret + savinig to localstorage
 var client_id = "055761bcf5624053b43975b0a48c0f7b";
-var client_secret = "";
+var client_secret = "a612abd8234648b7a1217b33d478f582";
 localStorage.setItem("client_id", client_id);
 localStorage.setItem("client_secret", client_secret);
 
