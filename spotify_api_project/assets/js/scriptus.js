@@ -33,7 +33,8 @@ function onPageLoad() {
     client_id = localStorage.getItem("client_id");
     client_secret = localStorage.getItem("client_secret");
     if (window.location.search.length > 0) { // looking at querry param
-        handleRedirect();
+        handleRedirect()
+
     }
     refreshDevices();
     refreshPlaylists();
@@ -123,6 +124,7 @@ function handleDevicesResponse() {
         console.log(data);
         removeAllItems("devices");
         data.devices.forEach(item => addDevice(item));
+        document.getElementById('loginButton').style.display = 'none';
     } else if (this.status == 401) {
         refreshAccessToken()
     } else {
