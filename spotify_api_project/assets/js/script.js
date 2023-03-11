@@ -1,4 +1,4 @@
-var redirect_uri = "https://eso.vse.cz/~vanv08/SP2/";
+var redirect_uri = "https://vanguyen.info/spotify_api_project/";
 // https://eso.vse.cz/~vanv08/SP2/
 // http://127.0.0.1:5500/SP2/index.html
 
