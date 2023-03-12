@@ -12,3 +12,8 @@ span:hover {
     background-color: antiquewhite;
     cursor: pointer;
 }
+
+#albumImage {
+    width: auto;
+    height: 400px;
+}
