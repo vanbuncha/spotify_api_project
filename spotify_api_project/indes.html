@@ -24,6 +24,14 @@
             <div class="row  text-center">
                 <div class="col">
                     <h1> Now playing</h1>
+                    <!--
+                        <input id="currentlyPlayingButton" type="button" class="btn btn-primary btn-sm mt-3 mb-5" o value="Refresh Currently Playing">
+                    -->
+                    <div>
+                        <img id="albumImage" src="">
+                        <div id="trackTitle"></div>
+                        <div id="trackArtist"></div>
+                    </div>
                     <div class="row text-center">
                         <div class="col">
                             <input id="previousButton" type="button" class="btn btn-sm btn-dark mb-2" value="Prev">
@@ -32,12 +40,6 @@
                             <input id="pauseButton" type="button" class="btn btn-sm btn-dark mb-2" value="Pause">
                             <input id="nextButton" type="button" class="btn btn-sm btn-dark mb-2" value="Next">
                         </div>
-                    </div>
-                    <input id="currentlyPlayingButton" type="button" class="btn btn-primary btn-sm mt-3 mb-5" o value="Refresh Currently Playing">
-                    <div>
-                        <img id="albumImage" src="">
-                        <div id="trackTitle"></div>
-                        <div id="trackArtist"></div>
                     </div>
                 </div>
             </div>
@@ -60,8 +62,7 @@
 
                 <div class="mb-2 trackSection">
                     <label for="tracks" class="form-label">Currently playing</label>
-                    <select id="tracks" class="form-control">
-                    </select>
+                    <select id="tracks" class="form-control"></select>
                     <input id="fetchTracksButton" class="btn btn-primary btn-sm mt-3" type="button" value="Fetch Tracks">
                     <h2>Tracks in playlist:</h2>
                     <div id="trackListExtract" class="row">
@@ -71,7 +72,7 @@
             </div>
         </div>
     </div>
-    <script src="assets/js/scriptus.js "></script>
+    <script src="assets/js/script.js "></script>
 </body>
 
 </html>

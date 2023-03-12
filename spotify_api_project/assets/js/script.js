@@ -196,6 +196,7 @@ function play() {
 function shuffle() {
     callApi("PUT", SHUFFLE + "?state=true&device_id=" + deviceId(), null, handleApiResponse);
     play();
+    setTimeout(currentlyPlaying, 3000);
 }
 
 function pause() {
@@ -204,10 +205,13 @@ function pause() {
 
 function next() {
     callApi("POST", NEXT + "?device_id=" + deviceId(), null, handleApiResponse);
+    setTimeout(currentlyPlaying, 2000);
+
 }
 
 function previous() {
     callApi("POST", PREVIOUS + "?device_id=" + deviceId(), null, handleApiResponse);
+    setTimeout(currentlyPlaying, 2000);
 }
 
 function changeDevice() {
@@ -333,6 +337,7 @@ pauseButton.addEventListener("click", pause, true);
 
 const nextButton = document.getElementById("nextButton");
 nextButton.addEventListener("click", next, true);
+nextButton.addEventListener("click", currentlyPlaying, true);
 
 const currentlyPlayingButton = document.getElementById("currentlyPlayingButton");
 currentlyPlayingButton.addEventListener("click", currentlyPlaying, true);
@@ -360,6 +365,7 @@ function addTrackExtract(item, index) {
         document.getElementById("tracks").value = node.value;
         let playlist_id = document.getElementById("playlists").value;
         let trackindex = document.getElementById("tracks").value;
+        setTimeout(currentlyPlaying, 3000);
 
 
         let body = {};
