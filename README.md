@@ -16,8 +16,10 @@ Open index.html in a web browser.
 3. To control currently playing songs, you can use the player controls at the bottom of the page. You can play/pause, skip to the next or previous track using the controls.
 ## Technologies Used
 JavaScript
-HTML
-CSS
-Spotify Web API
+- HTML
+- CSS
+- Spotify Web API
 ## Acknowledgements
 This project was inspired by the Spotify Web API Tutorial and Codecademy's Build Front-End Web Applications from Scratch course.
+## License
+This project is licensed under the terms of the MIT License. See the LICENSE file for details.
