@@ -23,3 +23,5 @@ JavaScript
 This project was inspired by the Spotify Web API Tutorial and Codecademy's Build Front-End Web Applications from Scratch course.
 ## License
 This project is licensed under the terms of the MIT License. See the LICENSE file for details.
+
+Live demo: <a href="https://vanguyen.info/spotify_api_project/">Link</a>
